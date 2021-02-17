@@ -1,0 +1,40 @@
+@import '@styles/variables';
+
+.Footer {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: $color-first;
+	color: white;
+	padding: 40px 0;
+	margin: 0 10px;
+}
+.Footer-logo {
+	padding: 20px 0; 
+}
+.Footer-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 0; 
+	span {
+		font-size: 1.3rem;
+		margin: 10px 0;
+	}	
+}
+
+.Footer-rrss {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	padding: 20px 0;
+	a {
+		color: $color-second;
+		padding: 10px 25px;
+    	font-size: 3rem;
+	}
+	a:hover {
+		color: white;
+	}
+}

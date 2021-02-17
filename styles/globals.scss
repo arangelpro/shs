@@ -1,0 +1,120 @@
+@import url('http://fonts.cdnfonts.com/css/arial-rounded-mt-bold');
+@import './variables.scss';
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial Rounded MT Bold', Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+li.active {
+	border-bottom: 8px solid $color-second;
+}
+li.active:hover {
+	border-bottom: 8px solid white;
+} 
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bg-first {
+	background-color: $color-first;
+}
+
+.bg-second {
+	background-color: $color-second;
+}
+
+.bg-third {
+	background-color: $color-third;
+}
+
+.bg-fourth {
+	background-color: $color-fourth;
+}
+
+.btn {
+	width: calc(100% - 30px);
+    height: 40px;
+    background-color: #5963a6;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    margin: 0 15px;
+	font-size: 1.2rem;
+}
+.col-6 {
+	width: calc(calc(calc(100% / 12) * 6) - 30px);
+}
+.col-12 {
+	width: calc(100% - 30px);
+}
+
+.container {
+	height: inherit;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	display: inherit;
+	flex-direction: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	flex-wrap: inherit;
+}
+
+.flex-order {
+	order: 1;
+}
+
+.form-group {
+	display: inline-block;
+	margin: 0 15px;
+	padding: 10px 0;
+	box-sizing: border-box;
+	.form-control {
+		background-color: $color-third;
+		color: white;
+		border: 0;
+		width: 100%;
+		height: 40px;
+		padding: 0 15px;
+		box-sizing: border-box;
+		textarea {
+			height: 100px;
+			padding-top: 10px;
+		}
+	}
+}
+.section-title {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin: 15px 0;
+}
+
+::-webkit-input-placeholder { color: white; } 
+
+:-moz-placeholder { /* Firefox 18- */ color: white; } 
+
+::-moz-placeholder { /* Firefox 19+ */ color: white; } 
+
+:-ms-input-placeholder { color: white; }
+
+@media screen and (min-width: 768px) {
+	.col-md-6 {
+		width: calc(calc(calc(100% / 12) * 6) - 30px);
+	}
+	.col-md-12 {
+		width: calc(100% - 30px);
+	}
+}

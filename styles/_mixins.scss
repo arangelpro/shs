@@ -1,0 +1,8 @@
+@mixin triangle($color-primary, $color-secundary, $width, $heigth) {
+	border-top-color: $color-primary;
+	border-left-color: $color-primary;
+	border-right-color: $color-secundary;
+	border-bottom-color: $color-secundary;
+	border-width: $width $heigth;
+	border-style: solid;
+}

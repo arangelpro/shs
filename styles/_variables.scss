@@ -1,0 +1,8 @@
+$color-first: rgb(89, 99, 166);
+$color-second: rgb(209, 210, 212);
+$color-third: rgb(175, 175, 175);
+$color-fourth: rgb(243, 157, 119);
+
+@function color-second-transparency($arg: 1){
+	@return rgba(209, 210, 212, $arg); 
+}

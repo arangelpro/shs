@@ -1,0 +1,22 @@
+@import '@styles/variables.scss';
+
+.Contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 20px 0;
+	color: $color-first;
+}
+.Contact-content {
+	background-color: $color-second;
+	width: 100%;
+	padding: 40px 0;
+}
+
+.Contact-content form {	
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}

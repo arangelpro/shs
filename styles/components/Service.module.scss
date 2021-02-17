@@ -1,0 +1,91 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+$size: 200px;
+$size-second: 150px;
+
+.Service{
+	background-color: $color-third;
+	height: $size;
+	width: 100%;
+	display: flex;
+	margin: 15px 0;
+}
+
+.Service-image {
+	display: none;
+}
+
+.Service-info {
+	flex: 1;	
+	color: white;
+}
+
+.Service-info-wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 250px;
+	margin: 0 auto;
+}
+.Service-info-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+    color: black;
+    width: $size-second;
+    height: $size-second;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+	.Service-image {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 70%;
+		height: 100%;
+		font-size: 3rem;
+		background-color: $color-third;
+	}
+	
+	.Service-image::after {
+		content: "";
+		position: absolute;
+		@include triangle(transparent, $color-second, 100px, 100px);
+	}
+	.Service-image-right::after {
+		right: 0;
+	}
+	.Service-image-left::after {
+		left: 0;
+		transform: rotate(90deg);
+	}
+	.Service-image-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
+	.Service-image-right {
+		.Service-image-wrapper {
+			margin-right: $size;
+		}
+	}
+	.Service-image-left {
+		.Service-image-wrapper {
+			margin-left: $size;
+		}
+	}
+	.Service-info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30%;
+		height: 100%;		
+		background-color: $color-second;
+	}
+}
